@@ -46,7 +46,6 @@ try:
                 answer += tokens[i][2:]
             else:
                 answer += ' ' + tokens[i]
-
        st.write(answer)
        language="en"
        output=gTTS(text=answer,lang=language,slow=False)
