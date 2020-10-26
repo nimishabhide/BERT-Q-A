@@ -46,12 +46,12 @@ try:
                 answer += tokens[i][2:]
             else:
                 answer += ' ' + tokens[i]
-       st.write(answer)
-       language="en"
-       output=gTTS(text=answer,lang=language,slow=False)
-       output.save("voice.ogg")
-       audio_file = open('voice.ogg', 'rb')
-       audio_bytes = audio_file.read()
-       st.audio(audio_bytes, format='audio/ogg')
+                st.write(answer)
+                language="en"
+                output=gTTS(text=answer,lang=language,slow=False)
+                output.save("voice.ogg")
+                audio_file = open('voice.ogg', 'rb')
+                audio_bytes = audio_file.read()
+                st.audio(audio_bytes, format='audio/ogg')
 except AssertionError:
     st.error("Please enter text that you want me to answer")
