@@ -21,7 +21,6 @@ st.sidebar.markdown('<b>Best used while answering interviews</b>', unsafe_allow_
 st.sidebar.markdown('<b>Created by:Nimisha Bhide</b>', unsafe_allow_html=True)
 st.sidebar.markdown('<b>Email id:nbhide.nb@gmail.com</b>', unsafe_allow_html=True)
 try:
-    import torch
     myText=st.text_input("PLEASE ENTER THE TEXT HERE")
     question=st.text.input("PLEASE ENTER THE QUESTION HERE")
     if st.button('ANSWER'):
