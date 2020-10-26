@@ -1,7 +1,6 @@
 import streamlit as st
 from gtts import gTTS
 import os
-from pytorch import torch
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
 html_temp = """
