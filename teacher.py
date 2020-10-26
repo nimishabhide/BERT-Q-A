@@ -47,7 +47,7 @@ try:
             else:
                 answer += ' ' + tokens[i]
 
-       st.write('Answer: "' + answer + '"')
+       st.write(answer)
        language="en"
        output=gTTS(text=answer,lang=language,slow=False)
        output.save("voice.ogg")
