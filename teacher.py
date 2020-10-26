@@ -48,7 +48,7 @@ if st.button('ANSWER'):
     else:
         answer += ' ' + tokens[i]
 
-  print('Answer: "' + answer + '"')
+  st.write('Answer: "' + answer + '"')
   language="en"
   output=gTTS(text=answer,lang=language,slow=False)
   output.save("voice.ogg")
