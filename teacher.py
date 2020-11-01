@@ -1,4 +1,6 @@
 import streamlit as st
+import torch
+import torchvision
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
 html_temp = """
